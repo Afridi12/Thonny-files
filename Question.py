@@ -21,7 +21,7 @@ class Question:
             self.__ans = ans4
     
     def __str__(self):
-        return self.__ques1 + "\n" + '1 ' + self.__ans1 + "\n" + '2 ' + self.__ans2 + "\n" + '3 ' + self.__ans3 + "\n" + '4 ' + self.__ans4  
+        return self.__ques1 + "\n" + '1. ' + self.__ans1 + "\n" + '2. ' + self.__ans2 + "\n" + '3. ' + self.__ans3 + "\n" + '4. ' + self.__ans4  
         
         
             
