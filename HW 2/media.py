@@ -23,8 +23,8 @@ class Movie(Media):
         return self.__running
     def getDirector(self):
         return self.__director
-    def play():
-        print(self.__name + 'is playing now.')
+    def play(self):
+        return super().getName() + ' is playing now.'
     def __str__(self):
         newSt = super().__str__()
         newSt += ' ' + '\nRunning Time: ' + self.__running + '\nDirector: ' +self.__director
@@ -36,7 +36,7 @@ class Song(Media):
         self.__album = album
         self.__artist = artist
     def play(self):
-        print(self.__name + 'is playing now.')
+        return super().getName() + ' is playing now.'
     def getAlbum(self):
         return self.__album
     def getArtist(self):
@@ -51,8 +51,8 @@ class Picture(Media):
     def __init__(self, rating, typeOf, name, resolution):
         super().__init__(rating, typeOf, name)
         self.__resolution = resolution
-    def play(self):
-        print(self.__name + 'is playing now.')
+    def show(self):
+        return 'Showing ' + super().getName()
     def getResolution(self):
         return self.__resolution
     def __str__(self):
@@ -60,20 +60,5 @@ class Picture(Media):
         newSt += ' ' + '\nResolution: ' + self.__resolution
         return newSt
     
-
-        
-        
-        
-
-        
-
-a = Movie('4/10','Movie','Transformer', '2:00:00', 'Michael Bay')
-b = Song('10/10','Song','Carnival of Rust', '3:27', 'Something')
-c = Picture('10/10','Picture','Monalisa','300')
-print(a)
-print('')
-print(b)
-print('')
-print(c)
 
 
